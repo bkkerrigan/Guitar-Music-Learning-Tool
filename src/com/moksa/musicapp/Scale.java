@@ -95,6 +95,10 @@ public class Scale {
                 mode = new int[Constants.MINOR.length];
                 mode = Constants.MINOR;
                 break;
+            case "Pentatonic Scale":
+                mode = new int[Constants.PENTATONIC.length];
+                mode = Constants.PENTATONIC;
+                break;
         }
         return mode;
     }

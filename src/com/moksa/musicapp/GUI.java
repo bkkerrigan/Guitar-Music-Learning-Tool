@@ -18,10 +18,10 @@ import java.util.List;
 public class GUI extends JFrame  {
 
     Scale scale = new Scale();
+    Fretboard fretboard = new Fretboard();
 
-    String path = "C:/black";
     private final int WINDOW_WIDTH = 400;
-    private final int WINDOW_HEIGHT = 300;
+    private final int WINDOW_HEIGHT = 400;
 
     //SECTION ONE SECTION ONE SECTION ONE SECTION ONE SECTION ONE SECTION ONE
     private JPanel sectionOne;
@@ -47,6 +47,7 @@ public class GUI extends JFrame  {
     private ButtonGroup modeButtonGroup;
     private JRadioButton majorScale;
     private JRadioButton minorScale;
+    private JRadioButton pentatonic;
 
     //RESULT PANEL
     private JPanel resultPanel;
@@ -58,6 +59,12 @@ public class GUI extends JFrame  {
     private JPanel sectionTwo;
     //FRET BOARD
     private JPanel fretPanel;
+    private JLabel fretNumbers;
+    private JLabel stringOne;
+    private JLabel stringTwo;
+    private JLabel stringThree;
+    private JLabel stringFour;
+    private JLabel stringFive;
     private JLabel stringSix;
     private ArrayList<ImageIcon> images = new ArrayList<ImageIcon>();
 
@@ -174,6 +181,7 @@ public class GUI extends JFrame  {
         //Create mode buttons
         majorScale = new JRadioButton("Major Scale");
         minorScale = new JRadioButton("Minor Scale");
+        pentatonic = new JRadioButton("Pentatonic Scale");
 
         //Create radio group
         modeButtonGroup = new ButtonGroup();
@@ -181,10 +189,12 @@ public class GUI extends JFrame  {
         //Group radio buttons
         modeButtonGroup.add(majorScale);
         modeButtonGroup.add(minorScale);
+        modeButtonGroup.add(pentatonic);
 
         //Add action listeners to radio buttons
         majorScale.addActionListener(new modeRadioListener());
         minorScale.addActionListener(new modeRadioListener());
+        pentatonic.addActionListener((new modeRadioListener()));
 
         modePanel = new JPanel();
 
@@ -194,6 +204,7 @@ public class GUI extends JFrame  {
         //Add the key radio buttons to the panel
         modePanel.add(majorScale);
         modePanel.add(minorScale);
+        modePanel.add(pentatonic);
 
     }
     private void buildResultPanel(){
@@ -232,10 +243,24 @@ public class GUI extends JFrame  {
 
     private void buildFretPanel(){
 
+        //fretNumbers = new JLabel("          1     2     3     4      5     6     7     8     9     10     11      12 ");
+        stringOne = new JLabel();
+        stringTwo = new JLabel();
+        stringThree = new JLabel();
+        stringFour = new JLabel();
+        stringFive = new JLabel();
         stringSix = new JLabel();
 
         fretPanel = new JPanel();
+        fretPanel.setLayout(new GridLayout(7,0));
 
+        //fretPanel.add(fretNumbers);
+
+        fretPanel.add(stringOne);
+        fretPanel.add(stringTwo);
+        fretPanel.add(stringThree);
+        fretPanel.add(stringFour);
+        fretPanel.add(stringFive);
         fretPanel.add(stringSix);
 
     }
@@ -286,23 +311,44 @@ public class GUI extends JFrame  {
 
         public void actionPerformed(ActionEvent gB){
 
+            stringOne.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.FIRST_STRING));
+            stringTwo.setText("B    " + fretboard.getString(scale.scaleNotes, Constants.SECOND_STRING));
+            stringThree.setText("G    " + fretboard.getString(scale.scaleNotes, Constants.THIRD_STRING));
+            stringFour.setText("D    " + fretboard.getString(scale.scaleNotes, Constants.FOURTH_STRING));
+            stringFive.setText("A    " + fretboard.getString(scale.scaleNotes, Constants.FIFTH_STRING));
+            stringSix.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.SIXTH_STRING));
+
+            /*
             String currentNote;
             String fullOutput = "";
+            boolean noteFound;
 
             for(int f = 0; f < Constants.SIXTH_STRING.length; f++){
-
+                noteFound = false;
                 currentNote = Constants.SIXTH_STRING[f];
-
+                System.out.println("Current Letter: " + currentNote);
                 for(int n = 0; n < scale.scaleNotes.length; n++){
 
-                        if(scale.scaleNotes[n] == currentNote) {
+                        if(scale.scaleNotes[n].equals(currentNote)) {
                             fullOutput = fullOutput + "-1-";
+                            noteFound = true;
                         }
+
+                    System.out.print("Scale letter" + scale.scaleNotes[n] + ": ");
+                    System.out.println(noteFound);
+
+                }
+
+                if(noteFound != true){
+                    fullOutput = fullOutput + "-0-";
+                }
+                else{
+                    noteFound = false;
                 }
 
             }
 
-           stringSix.setText(fullOutput);
+           stringSix.setText(fullOutput);*/
         }
     }
 
