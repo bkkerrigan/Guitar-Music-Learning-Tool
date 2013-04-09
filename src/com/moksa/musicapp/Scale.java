@@ -1,5 +1,12 @@
 package com.moksa.musicapp;
 
+/**
+ * Created with IntelliJ IDEA.
+ * User: Brendan Kerrigan
+ * Date: 4/9/13
+ * Time: 5:16 PM
+ * To change this template use File | Settings | File Templates.
+ */
 public class Scale {
 
     int root;
@@ -23,24 +30,24 @@ public class Scale {
 
         position = key;
 
-            for(steps = 0; steps < scale.length; steps++){
+        for(steps = 0; steps < scale.length; steps++){
 
-                position = position + scale[steps];
+            position = position + scale[steps];
 
-                if(position == 12) {
-                    position = 0;
-                }
-
-                if(position == 13) { //Cut these ifs down in size
-                    position = 1;
-                }
-
-                if(position == 14) {
-                    position = 2;
-                }
-
-                scaleNotes[steps] = tones[position];
+            if(position == 12) {
+                position = 0;
             }
+
+            if(position == 13) { //Cut these ifs down in size
+                position = 1;
+            }
+
+            if(position == 14) {
+                position = 2;
+            }
+
+            scaleNotes[steps] = tones[position];
+        }
         return scaleNotes;
     }
     public int setRoot(String rootLetter){

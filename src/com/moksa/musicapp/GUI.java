@@ -5,21 +5,18 @@ package com.moksa.musicapp;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.BorderLayout;
 
 import java.io.*;
-import javax.imageio.ImageIO;
 
-import java.awt.image.BufferedImage;
 import java.util.*;
-import java.util.List;
 
 public class GUI extends JFrame  {
 
     Scale scale = new Scale();
     Fretboard fretboard = new Fretboard();
 
-    private final int WINDOW_WIDTH = 400;
+
+    private final int WINDOW_WIDTH = 800;
     private final int WINDOW_HEIGHT = 400;
 
     //SECTION ONE SECTION ONE SECTION ONE SECTION ONE SECTION ONE SECTION ONE
@@ -50,7 +47,6 @@ public class GUI extends JFrame  {
 
     //RESULT PANEL
     private JPanel resultPanel;
-    private JButton generateData;
     private JButton generateBoard;
     private JLabel scaleNotesOut;
 
@@ -59,12 +55,12 @@ public class GUI extends JFrame  {
     //FRET BOARD
     private JPanel fretPanel;
 
-    private JLabel stringOne;
-    private JLabel stringTwo;
-    private JLabel stringThree;
-    private JLabel stringFour;
-    private JLabel stringFive;
-    private JLabel stringSix;
+    private JPanel stringOne;
+    private JPanel stringTwo;
+    private JPanel stringThree;
+    private JPanel stringFour;
+    private JPanel stringFive;
+    private JPanel stringSix;
     private ArrayList<ImageIcon> images = new ArrayList<ImageIcon>();
 
 
@@ -73,6 +69,7 @@ public class GUI extends JFrame  {
         setTitle("Music Learning Tool");
         setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 
         setLayout(new GridLayout(2,0));
 
@@ -84,6 +81,7 @@ public class GUI extends JFrame  {
         add(sectionTwo);
 
         setVisible(true);
+
     }
 
     /*
@@ -208,15 +206,12 @@ public class GUI extends JFrame  {
     }
     private void buildResultPanel(){
 
-        generateData = new JButton("Get notes");
         generateBoard = new JButton("Get board");
         scaleNotesOut = new JLabel("");
 
-        generateData.addActionListener(new generateDataNotesListener());
         generateBoard.addActionListener(new generateDataFretListener());
         resultPanel = new JPanel();
 
-        resultPanel.add(generateData);
         resultPanel.add(generateBoard);
         resultPanel.add(scaleNotesOut);
 
@@ -242,26 +237,9 @@ public class GUI extends JFrame  {
 
     private void buildFretPanel(){
 
-        //fretNumbers = new JLabel("          1     2     3     4      5     6     7     8     9     10     11      12 ");
-        stringOne = new JLabel();
-        stringTwo = new JLabel();
-        stringThree = new JLabel();
-        stringFour = new JLabel();
-        stringFive = new JLabel();
-        stringSix = new JLabel();
-
         fretPanel = new JPanel();
-        fretPanel.setLayout(new GridLayout(0,12));
+        fretPanel.setLayout(new GridLayout(6,0));
 
-        //fretPanel.add(fretNumbers);
-        /*
-        fretPanel.add(stringOne);
-        fretPanel.add(stringTwo);
-        fretPanel.add(stringThree);
-        fretPanel.add(stringFour);
-        fretPanel.add(stringFive);
-        fretPanel.add(stringSix);
-        */
     }
 
     /*
@@ -289,9 +267,12 @@ public class GUI extends JFrame  {
         }
     }
     //RESULT PANEL
-    private class generateDataNotesListener implements ActionListener{
 
-        public void actionPerformed(ActionEvent gA){
+    public class generateDataFretListener implements ActionListener{
+
+        public void actionPerformed(ActionEvent gB){
+
+            ////////////////////////////ACTION ONE
 
             String displayedNotes;
             displayedNotes = "";
@@ -301,64 +282,50 @@ public class GUI extends JFrame  {
                 displayedNotes = displayedNotes + " " + scale.scaleNotes[i];
             }
 
+
             scaleNotesOut.setText(displayedNotes);
 
-        }
+            ////////////////////////////// ACTION TWO
 
-    }
-    public class generateDataFretListener implements ActionListener{
-
-        public void actionPerformed(ActionEvent gB){
+            fretPanel.removeAll();
 
             int f;
 
-            for(f = 0; f < 12; f++){
+            stringOne = new JPanel();
+            stringTwo = new JPanel();
+            stringThree = new JPanel();
+            stringFour = new JPanel();
+            stringFive = new JPanel();
+            stringSix = new JPanel();
 
-                fretPanel.add((JButton) fretboard.stringOne.get(f));
+            fretPanel.add(stringOne);
+            fretPanel.add(stringTwo);
+            fretPanel.add(stringThree);
+            fretPanel.add(stringFour);
+            fretPanel.add(stringFive);
+            fretPanel.add(stringSix);
+
+            fretboard.stringOne = fretboard.getString(scale.scaleNotes,Constants.FIRST_STRING);
+            fretboard.stringTwo = fretboard.getString(scale.scaleNotes,Constants.SECOND_STRING);
+            fretboard.stringThree = fretboard.getString(scale.scaleNotes,Constants.THIRD_STRING);
+            fretboard.stringFour = fretboard.getString(scale.scaleNotes,Constants.FOURTH_STRING);
+            fretboard.stringFive = fretboard.getString(scale.scaleNotes,Constants.FIFTH_STRING);
+            fretboard.stringSix = fretboard.getString(scale.scaleNotes,Constants.SIXTH_STRING);
 
 
-            }
+            for(f = 0; f < 13; f++){
 
-            /*
-            stringOne.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.FIRST_STRING));
-            stringTwo.setText("B    " + fretboard.getString(scale.scaleNotes, Constants.SECOND_STRING));
-            stringThree.setText("G    " + fretboard.getString(scale.scaleNotes, Constants.THIRD_STRING));
-            stringFour.setText("D    " + fretboard.getString(scale.scaleNotes, Constants.FOURTH_STRING));
-            stringFive.setText("A    " + fretboard.getString(scale.scaleNotes, Constants.FIFTH_STRING));
-            stringSix.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.SIXTH_STRING));
-            */
-
-            /*
-            String currentNote;
-            String fullOutput = "";
-            boolean noteFound;
-
-            for(int f = 0; f < Constants.SIXTH_STRING.length; f++){
-                noteFound = false;
-                currentNote = Constants.SIXTH_STRING[f];
-                System.out.println("Current Letter: " + currentNote);
-                for(int n = 0; n < scale.scaleNotes.length; n++){
-
-                        if(scale.scaleNotes[n].equals(currentNote)) {
-                            fullOutput = fullOutput + "-1-";
-                            noteFound = true;
-                        }
-
-                    System.out.print("Scale letter" + scale.scaleNotes[n] + ": ");
-                    System.out.println(noteFound);
-
-                }
-
-                if(noteFound != true){
-                    fullOutput = fullOutput + "-0-";
-                }
-                else{
-                    noteFound = false;
-                }
+                stringOne.add((JButton) fretboard.stringOne.get(f));
+                stringTwo.add((JButton) fretboard.stringTwo.get(f));
+                stringThree.add((JButton) fretboard.stringThree.get(f));
+                stringFour.add((JButton) fretboard.stringFour.get(f));
+                stringFive.add((JButton) fretboard.stringFive.get(f));
+                stringSix.add((JButton) fretboard.stringSix.get(f));
 
             }
 
-           stringSix.setText(fullOutput);*/
+            revalidate();
+
         }
     }
 
@@ -369,6 +336,7 @@ public class GUI extends JFrame  {
     MAIN
     MAIN
      */
+
     public static void main(String[] args) throws IOException  {
         new GUI();
     }
