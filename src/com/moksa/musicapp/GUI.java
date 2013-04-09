@@ -1,7 +1,6 @@
 package com.moksa.musicapp;
 
 
-import sun.plugin.javascript.navig.ImageArray;
 
 import javax.swing.*;
 import java.awt.*;
@@ -59,7 +58,7 @@ public class GUI extends JFrame  {
     private JPanel sectionTwo;
     //FRET BOARD
     private JPanel fretPanel;
-    private JLabel fretNumbers;
+
     private JLabel stringOne;
     private JLabel stringTwo;
     private JLabel stringThree;
@@ -252,17 +251,17 @@ public class GUI extends JFrame  {
         stringSix = new JLabel();
 
         fretPanel = new JPanel();
-        fretPanel.setLayout(new GridLayout(7,0));
+        fretPanel.setLayout(new GridLayout(0,12));
 
         //fretPanel.add(fretNumbers);
-
+        /*
         fretPanel.add(stringOne);
         fretPanel.add(stringTwo);
         fretPanel.add(stringThree);
         fretPanel.add(stringFour);
         fretPanel.add(stringFive);
         fretPanel.add(stringSix);
-
+        */
     }
 
     /*
@@ -311,12 +310,23 @@ public class GUI extends JFrame  {
 
         public void actionPerformed(ActionEvent gB){
 
+            int f;
+
+            for(f = 0; f < 12; f++){
+
+                fretPanel.add((JButton) fretboard.stringOne.get(f));
+
+
+            }
+
+            /*
             stringOne.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.FIRST_STRING));
             stringTwo.setText("B    " + fretboard.getString(scale.scaleNotes, Constants.SECOND_STRING));
             stringThree.setText("G    " + fretboard.getString(scale.scaleNotes, Constants.THIRD_STRING));
             stringFour.setText("D    " + fretboard.getString(scale.scaleNotes, Constants.FOURTH_STRING));
             stringFive.setText("A    " + fretboard.getString(scale.scaleNotes, Constants.FIFTH_STRING));
             stringSix.setText("E    " + fretboard.getString(scale.scaleNotes, Constants.SIXTH_STRING));
+            */
 
             /*
             String currentNote;

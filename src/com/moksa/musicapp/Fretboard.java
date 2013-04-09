@@ -1,5 +1,9 @@
 package com.moksa.musicapp;
 
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Brendan Kerrigan
@@ -9,9 +13,43 @@ package com.moksa.musicapp;
  */
 public class Fretboard {
 
-
+    ArrayList stringOne;
+    List stingTwo;
+    List stringThree;
+    List stringFour;
+    List stringFive;
+    List stringSix;
 
     Fretboard(){
+
+        stringOne = new ArrayList(initButtons(Constants.FIRST_STRING));
+
+
+
+    }
+
+
+
+
+
+    public ArrayList initButtons(String[] gString){
+
+        String[] guitarString = gString;
+        ArrayList<JButton> buttonsArray = new ArrayList<JButton>();
+
+        int button = 1;
+
+        int numberOfButtons = 12;
+
+        for(int i = 0;i < 12;i++){
+            JButton jButton = new JButton();
+            jButton.setText(guitarString[i]);
+            jButton.setName("button" + Integer.toString(button));
+            buttonsArray.add(jButton);
+            button++;
+        }
+
+        return buttonsArray;
 
     }
 
@@ -53,6 +91,5 @@ public class Fretboard {
 
         return fullOutput;
     }
-
 
 }
