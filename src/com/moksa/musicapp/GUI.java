@@ -267,7 +267,6 @@ public class GUI extends JFrame  {
         }
     }
     //RESULT PANEL
-
     public class generateDataFretListener implements ActionListener{
 
         public void actionPerformed(ActionEvent gB){

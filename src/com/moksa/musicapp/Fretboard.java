@@ -1,6 +1,8 @@
 package com.moksa.musicapp;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 /**
@@ -10,10 +12,11 @@ import java.util.ArrayList;
  * Time: 5:17 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Fretboard {
+public class Fretboard implements ActionListener{
 
     ImageIcon white = new ImageIcon(getClass().getResource("white.jpg"));
     ImageIcon black = new ImageIcon(getClass().getResource("black.jpg"));
+    ImageIcon red = new ImageIcon(getClass().getResource("red.jpg"));
 
     ArrayList stringOne;
     ArrayList stringTwo;
@@ -62,12 +65,23 @@ public class Fretboard {
             }
 
             note.setName("Button" + Integer.toString(f));
+            note.addActionListener(this);
             buttonsArray.add(note);
         }
 
         return buttonsArray;
     }
 
+    private class chordListener implements ActionListener{
+
+        public void actionPerformed(ActionEvent cA) {
+
+            for(int f = 0; f < 3; f++);
+
+
+        }
+
+    }
 
 
 }

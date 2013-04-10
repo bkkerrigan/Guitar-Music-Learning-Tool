@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62bd22ba-d496-43d6-8660-8284fbfa136d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/red.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Scale.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Scale.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Music.iws" />
@@ -17,8 +15,8 @@
     <file path="/fragment.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365541710235" ignored="false" />
     <file path="/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365542454201" ignored="false" />
     <file path="/Scale.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365542348128" ignored="false" />
-    <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365540461752" ignored="false" />
-    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365542626200" ignored="false" />
+    <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365637792329" ignored="false" />
+    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365636657149" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,30 +75,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GUI.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GUI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="12" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.36442143">
+            <state line="206" column="0" selection-start="6000" selection-end="6000" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#buildKeyPanel#0;class#GUI#0" expanded="false" />
                 <element signature="method#buildModePanel#0;class#GUI#0" expanded="false" />
+                <element signature="method#buildResultPanel#0;class#GUI#0" expanded="false" />
                 <element signature="method#buildSectionTwo#0;class#GUI#0" expanded="false" />
                 <element signature="method#buildFretPanel#0;class#GUI#0" expanded="false" />
+                <element signature="class#keyRadioListener#0;class#GUI#0" expanded="false" />
                 <element signature="class#modeRadioListener#0;class#GUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fretboard.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Fretboard.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="14" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#723#732#0" expanded="true" />
-              </folding>
+            <state line="79" column="12" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.7138315">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,15 +145,17 @@
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Song.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Scale.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1028" />
+    <option name="x" value="-1" />
+    <option name="y" value="31" />
+    <option name="width" value="1682" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,7 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,6 +237,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -258,9 +257,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.GUI">
     <configuration default="false" name="GUI" type="Application" factoryName="Application" temporary="true">
@@ -299,19 +298,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -337,6 +323,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -439,9 +438,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1028" extended-state="0" />
+    <frame x="-1" y="31" width="1682" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="131" width="647" height="828" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -450,14 +450,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29047072" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29039547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.7095293" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25258324" sideWeight="0.76790833" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="131" width="647" height="828" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1505508" sideWeight="0.74601364" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25398633" sideWeight="0.76790833" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32982457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -526,6 +525,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="12" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#buildKeyPanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildModePanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildResultPanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildSectionTwo#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildFretPanel#0;class#GUI#0" expanded="false" />
+            <element signature="class#keyRadioListener#0;class#GUI#0" expanded="false" />
+            <element signature="class#modeRadioListener#0;class#GUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="120" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
@@ -540,8 +576,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#buildKeyPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildModePanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildResultPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildSectionTwo#0;class#GUI#0" expanded="false" />
             <element signature="method#buildFretPanel#0;class#GUI#0" expanded="false" />
+            <element signature="class#keyRadioListener#0;class#GUI#0" expanded="false" />
             <element signature="class#modeRadioListener#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
@@ -561,8 +599,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#buildKeyPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildModePanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildResultPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildSectionTwo#0;class#GUI#0" expanded="false" />
             <element signature="method#buildFretPanel#0;class#GUI#0" expanded="false" />
+            <element signature="class#keyRadioListener#0;class#GUI#0" expanded="false" />
             <element signature="class#modeRadioListener#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
@@ -585,27 +625,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_11/src.zip!/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="11" selection-start="7447" selection-end="7447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="120" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#723#732#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,15 +641,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="12" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.36442143">
+        <state line="206" column="0" selection-start="6000" selection-end="6000" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#buildKeyPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildModePanel#0;class#GUI#0" expanded="false" />
+            <element signature="method#buildResultPanel#0;class#GUI#0" expanded="false" />
             <element signature="method#buildSectionTwo#0;class#GUI#0" expanded="false" />
             <element signature="method#buildFretPanel#0;class#GUI#0" expanded="false" />
+            <element signature="class#keyRadioListener#0;class#GUI#0" expanded="false" />
             <element signature="class#modeRadioListener#0;class#GUI#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="12" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.7138315">
+          <folding />
         </state>
       </provider>
     </entry>
