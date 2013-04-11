@@ -323,7 +323,16 @@ public class GUI extends JFrame  {
 
             }
 
+            fretboard.guitarStrings =  new ArrayList<ArrayList<JButton>>();
+            fretboard.guitarStrings.add(0, fretboard.stringOne);
+            fretboard.guitarStrings.add(1, fretboard.stringTwo);
+            fretboard.guitarStrings.add(2, fretboard.stringThree);
+            fretboard.guitarStrings.add(3, fretboard.stringFour);
+            fretboard.guitarStrings.add(4, fretboard.stringFive);
+            fretboard.guitarStrings.add(5, fretboard.stringSix);
+
             revalidate();
+
 
         }
     }

@@ -50,6 +50,7 @@ public class Scale {
         }
         return scaleNotes;
     }
+    public String[] getChord(String[] sNotes, String actionCommand, )
     public int setRoot(String rootLetter){
         switch(rootLetter){
             case "A":
@@ -109,5 +110,7 @@ public class Scale {
         }
         return mode;
     }
+
+
 
 }

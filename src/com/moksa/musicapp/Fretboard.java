@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Time: 5:17 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Fretboard implements ActionListener{
+public class Fretboard{
 
     ImageIcon white = new ImageIcon(getClass().getResource("white.jpg"));
     ImageIcon black = new ImageIcon(getClass().getResource("black.jpg"));
@@ -68,49 +68,61 @@ public class Fretboard implements ActionListener{
             }
 
             note.setName("Button" + Integer.toString(f));
-            note.addActionListener(new chordListener);
+            note.setText(("Button" + Integer.toString(f)));
+            note.setActionCommand(guitarString[f]);
+            //note.addActionListener(new chordListener());
             buttonsArray.add(note);
         }
 
         return buttonsArray;
     }
 
-    private class chordListener implements ActionListener{
+    public void displayChord(String[] sNotes,String[] cNotes, ArrayList gString, int pos){
 
-        public void actionPerformed(ActionEvent cA) {
-            
-            
-            ArrayList<JButton> currentString;
-            JButton currentNote;
-            
-            for(int f = 0; f < 6; f++){
-                
-                currentString = guitarStrings.get(f);
-                
-                for(int p = 0; p < 3; p++){
-                    
-                    currentNote = currentString.get(p);
-                    
-                    for(int n = 0; n < lengthOfNotes; n++){
-                        
-                        if(currentNote.getActionCommand == scaleNotes[n]){
-                            
-                            currentNote.setIcon("red.jpg");
-                            
-                        }
-                        
+        int position = pos;
+
+        String[] scaleNotes = sNotes;
+        String[] chordNotes = cNotes;
+
+
+        ArrayList<JButton> guitarString = gString;
+        JButton currentNote;
+
+        for(int f = position; f < 3; f++){
+
+            //currentString = guitarStrings.get(f);
+            currentNote = guitarString.get(f);
+
+            for(int p = currentNote; p < (currentNote + 3); p++){
+
+                currentNote = currentString.get(p);
+
+                for(int n = 0; n < 3; n++){
+
+                    if(currentNote.getActionCommand() == scaleNotes[n]){
+
+                        currentNote.setIcon(red);
+
                     }
-                     
-                    
+
                 }
-                
-                
+
+
             }
 
 
         }
-
     }
 
-
 }
+
+//Get the position of the click or value of the click
+
+//Find out the values position on the chord chart (Major or minor)
+
+//Get the Chord Notes
+
+//Check the notes with the fretboard
+
+//do it
+
