@@ -18,4 +18,12 @@ public interface Constants {
     public static final int[] MAJOR = new int[]{0, 2, 2, 1, 2, 2, 2};
     public static final int[] MAJOR_PENTATONIC = new int[]{0, 2, 2, 3, 2, 3};
 
+    public static final int[] MAJOR_CHORD = new int[]{0, 2, 4};
+    public static final int[] MINOR_CHORD = new int[]{0, 1, 4};
+
+    public static final int[][] MAJOR_CHORD_PROGRESSION = new int[][]{MAJOR_CHORD, MINOR_CHORD, MINOR_CHORD, MAJOR_CHORD, MAJOR_CHORD, MINOR_CHORD, MINOR_CHORD};
+    public static final int[][] MINOR_CHORD_PROGRESSION = new int[][]{MINOR_CHORD, MINOR_CHORD, MAJOR_CHORD, MINOR_CHORD, MINOR_CHORD, MAJOR_CHORD, MAJOR_CHORD};
+
+
+
 }

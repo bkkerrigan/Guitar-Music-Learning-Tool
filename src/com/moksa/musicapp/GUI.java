@@ -12,8 +12,7 @@ import java.util.*;
 
 public class GUI extends JFrame  {
 
-    Scale scale = new Scale();
-    Fretboard fretboard = new Fretboard();
+
 
 
     private final int WINDOW_WIDTH = 800;
@@ -63,8 +62,21 @@ public class GUI extends JFrame  {
     private JPanel stringSix;
     private ArrayList<ImageIcon> images = new ArrayList<ImageIcon>();
 
+    Scale s;
+    Fretboard f;
 
-    public GUI(){
+    public static void main(String[] args) throws IOException  {
+
+        Scale scale = new Scale();
+        Fretboard fretboard = new Fretboard(scale);
+
+        new GUI(scale, fretboard);
+    }
+
+    public GUI(Scale scale, Fretboard fretboard){
+
+        s = scale;
+        f = fretboard;
 
         setTitle("Music Learning Tool");
         setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
@@ -217,13 +229,13 @@ public class GUI extends JFrame  {
 
     }
 
-        /*
-    SECTION TWO
-    SECTION TWO
-    SECTION TWO
-    SECTION TWO
-    SECTION TWO
-     */
+    /*
+SECTION TWO
+SECTION TWO
+SECTION TWO
+SECTION TWO
+SECTION TWO
+ */
     private void buildSectionTwo(){
 
         buildFretPanel();
@@ -254,7 +266,7 @@ public class GUI extends JFrame  {
     private class keyRadioListener implements ActionListener{
 
         public void actionPerformed(ActionEvent kA) {
-            scale.setRoot(kA.getActionCommand());
+            s.setRoot(kA.getActionCommand());
         }
     }
     //MODE PANEL
@@ -262,7 +274,7 @@ public class GUI extends JFrame  {
 
         public void actionPerformed(ActionEvent mB) {
 
-           scale.setMode(mB.getActionCommand());
+            s.setMode(mB.getActionCommand());
 
         }
     }
@@ -271,14 +283,15 @@ public class GUI extends JFrame  {
 
         public void actionPerformed(ActionEvent gB){
 
+
             ////////////////////////////ACTION ONE
 
             String displayedNotes;
             displayedNotes = "";
-            scale.getScale(scale.root, scale.mode);
+            s.getScale(s.root, s.mode);
 
-            for(int i = 0; i < scale.scaleNotes.length; i++){
-                displayedNotes = displayedNotes + " " + scale.scaleNotes[i];
+            for(int i = 0; i < s.scaleNotes.length; i++){
+                displayedNotes = displayedNotes + " " + s.scaleNotes[i];
             }
 
 
@@ -286,55 +299,56 @@ public class GUI extends JFrame  {
 
             ////////////////////////////// ACTION TWO
 
-            fretPanel.removeAll();
+            updateBoard(gB.getActionCommand());
 
-            int f;
-
-            stringOne = new JPanel();
-            stringTwo = new JPanel();
-            stringThree = new JPanel();
-            stringFour = new JPanel();
-            stringFive = new JPanel();
-            stringSix = new JPanel();
-
-            fretPanel.add(stringOne);
-            fretPanel.add(stringTwo);
-            fretPanel.add(stringThree);
-            fretPanel.add(stringFour);
-            fretPanel.add(stringFive);
-            fretPanel.add(stringSix);
-
-            fretboard.stringOne = fretboard.getString(scale.scaleNotes,Constants.FIRST_STRING);
-            fretboard.stringTwo = fretboard.getString(scale.scaleNotes,Constants.SECOND_STRING);
-            fretboard.stringThree = fretboard.getString(scale.scaleNotes,Constants.THIRD_STRING);
-            fretboard.stringFour = fretboard.getString(scale.scaleNotes,Constants.FOURTH_STRING);
-            fretboard.stringFive = fretboard.getString(scale.scaleNotes,Constants.FIFTH_STRING);
-            fretboard.stringSix = fretboard.getString(scale.scaleNotes,Constants.SIXTH_STRING);
-
-
-            for(f = 0; f < 13; f++){
-
-                stringOne.add((JButton) fretboard.stringOne.get(f));
-                stringTwo.add((JButton) fretboard.stringTwo.get(f));
-                stringThree.add((JButton) fretboard.stringThree.get(f));
-                stringFour.add((JButton) fretboard.stringFour.get(f));
-                stringFive.add((JButton) fretboard.stringFive.get(f));
-                stringSix.add((JButton) fretboard.stringSix.get(f));
-
-            }
-
-            fretboard.guitarStrings =  new ArrayList<ArrayList<JButton>>();
-            fretboard.guitarStrings.add(0, fretboard.stringOne);
-            fretboard.guitarStrings.add(1, fretboard.stringTwo);
-            fretboard.guitarStrings.add(2, fretboard.stringThree);
-            fretboard.guitarStrings.add(3, fretboard.stringFour);
-            fretboard.guitarStrings.add(4, fretboard.stringFive);
-            fretboard.guitarStrings.add(5, fretboard.stringSix);
-
-            revalidate();
 
 
         }
+    }
+
+    public void updateBoard(String root){
+
+        String chordRoot = root;
+
+        fretPanel.removeAll();
+
+        int fret;
+
+        stringOne = new JPanel();
+        stringTwo = new JPanel();
+        stringThree = new JPanel();
+        stringFour = new JPanel();
+        stringFive = new JPanel();
+        stringSix = new JPanel();
+
+        fretPanel.add(stringOne);
+        fretPanel.add(stringTwo);
+        fretPanel.add(stringThree);
+        fretPanel.add(stringFour);
+        fretPanel.add(stringFive);
+        fretPanel.add(stringSix);
+
+        f.stringOne = f.getString(s.scaleNotes,Constants.FIRST_STRING);
+        f.stringTwo = f.getString(s.scaleNotes,Constants.SECOND_STRING);
+        f.stringThree = f.getString(s.scaleNotes,Constants.THIRD_STRING);
+        f.stringFour = f.getString(s.scaleNotes,Constants.FOURTH_STRING);
+        f.stringFive = f.getString(s.scaleNotes,Constants.FIFTH_STRING);
+        f.stringSix = f.getString(s.scaleNotes,Constants.SIXTH_STRING);
+
+
+        for(fret = 0; fret < 13; fret++){
+
+            stringOne.add((JButton) f.stringOne.get(fret));
+            stringTwo.add((JButton) f.stringTwo.get(fret));
+            stringThree.add((JButton) f.stringThree.get(fret));
+            stringFour.add((JButton) f.stringFour.get(fret));
+            stringFive.add((JButton) f.stringFive.get(fret));
+            stringSix.add((JButton) f.stringSix.get(fret));
+
+        }
+
+        s.getChord(chordRoot);
+
     }
 
 
@@ -345,7 +359,5 @@ public class GUI extends JFrame  {
     MAIN
      */
 
-    public static void main(String[] args) throws IOException  {
-        new GUI();
-    }
+
 }

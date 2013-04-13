@@ -1,5 +1,7 @@
 package com.moksa.musicapp;
 
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Brendan Kerrigan
@@ -50,7 +52,65 @@ public class Scale {
         }
         return scaleNotes;
     }
-    public String[] getChord(String[] sNotes, String actionCommand, )
+    public ArrayList getChord(String actionCommand){
+
+        String chordRoot = actionCommand;
+
+        int[] chordType = new int[3];
+        ArrayList<String> chordNotes = new ArrayList<String>();
+
+        int scalePosition;
+        int position;
+
+        int steps;
+        int n;
+        for( n = 0; n < 7; n++){
+
+            if(chordRoot == scaleNotes[n]){
+                scalePosition = n;
+                if(mode == Constants.MAJOR){
+                    System.arraycopy(Constants.MAJOR_CHORD_PROGRESSION, n, chordType, n, Constants.MAJOR_CHORD_PROGRESSION.length);
+                }
+                if(mode == Constants.MINOR){
+                    System.arraycopy(Constants.MINOR_CHORD_PROGRESSION, n, chordType, n, Constants.MINOR_CHORD_PROGRESSION.length);
+                }
+
+            }
+        }
+
+        int t;
+        for(t = 0; t < 3; t++){
+
+            System.out.print(chordType[t]);
+
+        }
+
+        for(steps = 0; steps < 3; steps++){
+
+            position = chordType[steps];
+
+            if(position == 6) {
+                position = 0;
+            }
+
+            if(position == 7) { //Cut these ifs down in size
+                position = 1;
+            }
+
+            if(position == 8) {
+                position = 2;
+            }
+
+            if(position == 9){
+                position = 3;
+            }
+
+            chordNotes.set(steps, scaleNotes[position]);
+
+        }
+        System.out.print(chordNotes.get(0) + chordNotes.get(1) + chordNotes.get(2));
+        return chordNotes;
+    }
     public int setRoot(String rootLetter){
         switch(rootLetter){
             case "A":
@@ -110,7 +170,5 @@ public class Scale {
         }
         return mode;
     }
-
-
 
 }
