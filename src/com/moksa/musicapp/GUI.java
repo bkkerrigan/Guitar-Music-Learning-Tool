@@ -347,7 +347,7 @@ SECTION TWO
 
         }
 
-        s.getChord(chordRoot);
+        s.getChordNotes(root);
 
     }
 

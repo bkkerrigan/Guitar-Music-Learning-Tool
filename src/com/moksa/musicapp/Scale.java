@@ -13,6 +13,7 @@ public class Scale {
 
     int root;
     int[] mode;
+    int[][] chordProgression;
     String[] scaleNotes;
 
     public Scale(){
@@ -52,65 +53,32 @@ public class Scale {
         }
         return scaleNotes;
     }
-    public ArrayList getChord(String actionCommand){
 
-        String chordRoot = actionCommand;
-
+    public void getChordNotes(String root){
+        String chordRoot;
         int[] chordType = new int[3];
-        ArrayList<String> chordNotes = new ArrayList<String>();
 
-        int scalePosition;
-        int position;
+        int sNote;
 
-        int steps;
-        int n;
-        for( n = 0; n < 7; n++){
+        //Find the root of the button pushed on the board
+        chordRoot = root;
 
-            if(chordRoot == scaleNotes[n]){
-                scalePosition = n;
-                if(mode == Constants.MAJOR){
-                    System.arraycopy(Constants.MAJOR_CHORD_PROGRESSION, n, chordType, n, Constants.MAJOR_CHORD_PROGRESSION.length);
-                }
-                if(mode == Constants.MINOR){
-                    System.arraycopy(Constants.MINOR_CHORD_PROGRESSION, n, chordType, n, Constants.MINOR_CHORD_PROGRESSION.length);
-                }
+        //Find the chord type in the chord progression with the root notes position in the scale notes
+        for(sNote = 0; sNote < 7; sNote++){
+
+            if(chordRoot == scaleNotes[sNote]){
+
+                System.arraycopy(Constants.MAJOR_CHORD_PROGRESSION[sNote], 0, new int[] chordType, 0, 3);
 
             }
-        }
-
-        int t;
-        for(t = 0; t < 3; t++){
-
-            System.out.print(chordType[t]);
 
         }
 
-        for(steps = 0; steps < 3; steps++){
+        System.out.print(chordType[0] + "" + chordType[1] + "" + chordType[2]);
 
-            position = chordType[steps];
 
-            if(position == 6) {
-                position = 0;
-            }
-
-            if(position == 7) { //Cut these ifs down in size
-                position = 1;
-            }
-
-            if(position == 8) {
-                position = 2;
-            }
-
-            if(position == 9){
-                position = 3;
-            }
-
-            chordNotes.set(steps, scaleNotes[position]);
-
-        }
-        System.out.print(chordNotes.get(0) + chordNotes.get(1) + chordNotes.get(2));
-        return chordNotes;
     }
+
     public int setRoot(String rootLetter){
         switch(rootLetter){
             case "A":
@@ -158,10 +126,12 @@ public class Scale {
             case "Major Scale":
                 mode = new int[Constants.MAJOR.length];
                 mode = Constants.MAJOR;
+                chordProgression = Constants.MAJOR_CHORD_PROGRESSION;
                 break;
             case "Minor Scale":
                 mode = new int[Constants.MINOR.length];
                 mode = Constants.MINOR;
+                chordProgression = Constants.MINOR_CHORD_PROGRESSION;
                 break;
             case "Pentatonic Scale":
                 mode = new int[Constants.PENTATONIC.length];
