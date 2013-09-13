@@ -14,7 +14,7 @@
     <file path="/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365868386469" ignored="false" />
     <file path="/Scale.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365869009151" ignored="false" />
     <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365820637850" ignored="false" />
-    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104362371" ignored="false" />
+    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104442380" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819058115" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819597290" ignored="false" />
     <file path="/MasterPanel.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379103453800" ignored="false" />
@@ -111,7 +111,7 @@
       <file leaf-file-name="Fretboard.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="1.038168">
+            <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.7285714">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Fretboard#0;class#Fretboard#0" expanded="false" />
@@ -465,7 +465,11 @@
       <created>1379104375824</created>
       <updated>1379104375824</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rebooted">
+      <created>1379104448969</created>
+      <updated>1379104448969</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -492,7 +496,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -501,12 +505,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28498295" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28498295" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22727273" sideWeight="0.7150171" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22727273" sideWeight="0.67235494" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24914676" sideWeight="0.99925095" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="131" width="647" height="828" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -557,7 +561,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="After an extended period of time my programming capabilities and understanding have changed dramatically and so this project has gone under huge re-construction to reduce redundancy, sloppiness, and ignorant coding styles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebooted" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -574,6 +578,7 @@
     <MESSAGE value="Added dots to the fretboard. The dots are JButtons.&#10;" />
     <MESSAGE value="Starting chords.&#10;" />
     <MESSAGE value="After an extended period of time my programming capabilities and understanding have changed dramatically and so this project has gone under huge re-construction to reduce redundancy, sloppiness, and ignorant coding styles." />
+    <MESSAGE value="Rebooted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -701,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="1.038168">
+        <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.7285714">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Fretboard#0;class#Fretboard#0" expanded="false" />
