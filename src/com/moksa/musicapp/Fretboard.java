@@ -1,81 +1,107 @@
 package com.moksa.musicapp;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
+import java.awt.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Brendan Kerrigan
- * Date: 4/9/13
- * Time: 5:17 PM
- * To change this template use File | Settings | File Templates.
- */
-public class Fretboard{
+public class Fretboard extends Canvas {
 
-    Scale s;
+    int STRING_ONE = 7;
+    int STRING_TWO = 3;
+    int STRING_THREE = 10;
+    int STRING_FOUR = 5;
+    int STRING_FIVE = 0;
+    int STRING_SIX = 7;
 
-    ImageIcon white = new ImageIcon(getClass().getResource("white.jpg"));
-    ImageIcon black = new ImageIcon(getClass().getResource("black.jpg"));
-    ImageIcon red = new ImageIcon(getClass().getResource("red.jpg"));
+    int w = getWidth();
+    int h = getHeight();
+    Theory theory;
 
-    ArrayList<ArrayList<JButton>> guitarStrings;
-    ArrayList stringOne;
-    ArrayList stringTwo;
-    ArrayList stringThree;
-    ArrayList stringFour;
-    ArrayList stringFive;
-    ArrayList stringSix;
+    public Fretboard(Theory t) {
 
+        theory = t;
+        setPreferredSize(new Dimension(60,60));
 
-    Fretboard(Scale scale){
+    }
 
-        s = scale;
+    public void paint(Graphics g){
+
+        //Paint Background
+        g.setColor(Color.WHITE);
+        g.fillRect(0,0, 500, 500);
+
+        //Paint Guitar Strings
+        g.setColor(Color.BLACK);
+        g.drawLine(0, h + 15, 500, 15);
+        g.drawLine(0, h + 25, 500, 25);
+        g.drawLine(0, h + 35, 500, 35);
+        g.drawLine(0, h + 45, 500, 45);
+        g.drawLine(0, h + 55, 500, 55);
+        g.drawLine(0, h + 65, 500, 65);
+
+        //Draw notes
+        generateString(g, STRING_ONE, 10);
+        generateString(g, STRING_TWO, 20);
+        generateString(g, STRING_THREE, 30);
+        generateString(g, STRING_FOUR, 40);
+        generateString(g, STRING_FIVE, 50);
+        generateString(g, STRING_SIX, 60);
 
 
     }
 
+    private void generateString(Graphics g, int startPosition, int coordinates){
 
-    public ArrayList getString(String[] notes, String[] gString){
+        int position = startPosition;
 
-        ArrayList<JButton> buttonsArray = new ArrayList<JButton>();
+        for(int i = 0; i < 13; i++){
 
-        String[] notesInScale = notes;
-        String[] guitarString = gString;
+            for(String n : theory.getScaleNotes()){
 
-        String currentNote;
-        boolean noteFound;
+                if(n == Constants.NOTE_CIRCLE[position]){
 
-        for(int f = 0; f < guitarString.length; f++){
-
-            noteFound = false;
-            currentNote = guitarString[f];
-            JButton note = new JButton();
-
-            for(int n = 0; n < notesInScale.length; n++){
-
-                if(notesInScale[n].equals(currentNote)) {
-                    note.setIcon(black);
-                    noteFound = true;
+                    drawNote(g, i*20, coordinates, true, Constants.NOTE_CIRCLE[position]);
                 }
 
+                else{
+
+                    drawNote(g, i*20, coordinates, false, null);
+                }
             }
 
-            if(noteFound != true){
-                note.setIcon(white);
-            }
-            else{
-                noteFound = false;
+            position++;
+
+            if(position == 12){
+                position = 0;
             }
 
-            note.setName("Button" + Integer.toString(f));
-            note.setActionCommand(currentNote);
-            //note.addActionListener(new chordListener);
-            buttonsArray.add(note);
+            if(position == 13){
+                position = 1;
+            }
+
+            if(position == 14){
+                position = 2;
+            }
+
+
         }
 
-        return buttonsArray;
+    }
+
+    private void drawNote(Graphics g, int x, int y, boolean isNote, String noteName){
+
+        if(isNote == true){
+            g.setColor(Color.black);
+            g.fillOval(x, y, 13, 13);
+
+            g.setColor(Color.white);
+            g.drawString(noteName, x + 2, y + 11);
+        }
+
+        if(isNote == false){
+            g.setColor(Color.black);
+            g.drawOval(x, y, 9, 9);
+        }
+
     }
 
 }
