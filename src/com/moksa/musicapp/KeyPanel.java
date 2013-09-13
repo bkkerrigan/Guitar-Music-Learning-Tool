@@ -5,6 +5,7 @@ import java.awt.event.*;
 
 public class KeyPanel extends JPanel{
 
+
     Theory theory;
 
     private ButtonGroup bg;

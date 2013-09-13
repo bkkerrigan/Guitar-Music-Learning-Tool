@@ -6,6 +6,7 @@ import java.awt.event.*;
 
 public class MasterPanel extends JFrame {
 
+
     private KeyPanel key;
     private ScalePanel scale;
     private Fretboard fretboard;

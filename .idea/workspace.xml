@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62bd22ba-d496-43d6-8660-8284fbfa136d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Music.iws" />
@@ -14,7 +21,7 @@
     <file path="/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365868386469" ignored="false" />
     <file path="/Scale.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365869009151" ignored="false" />
     <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365820637850" ignored="false" />
-    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104463121" ignored="false" />
+    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104470075" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819058115" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819597290" ignored="false" />
     <file path="/MasterPanel.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379103453800" ignored="false" />
@@ -82,7 +89,7 @@
       <file leaf-file-name="MasterPanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +98,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,7 +107,7 @@
       <file leaf-file-name="KeyPanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fretboard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Fretboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.7285714">
+            <state line="5" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Fretboard#0;class#Fretboard#0" expanded="false" />
@@ -123,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Theory.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Theory.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.41576087">
               <folding>
                 <element signature="method#getRoot#0;class#Theory#0" expanded="false" />
                 <element signature="method#setScale#0;class#Theory#0" expanded="false" />
@@ -140,7 +147,7 @@
       <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +156,7 @@
       <file leaf-file-name="ScalePanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,12 +188,12 @@
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Scale.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/GUI.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" />
         <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java" />
+        <option value="$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java" />
       </list>
     </option>
   </component>
@@ -473,7 +480,11 @@
       <created>1379104467762</created>
       <updated>1379104467762</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rebooted">
+      <created>1379104473532</created>
+      <updated>1379104473532</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -503,7 +514,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32764506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -659,64 +670,64 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#getRoot#0;class#Theory#0" expanded="false" />
-            <element signature="method#setScale#0;class#Theory#0" expanded="false" />
-            <element signature="method#getScaleNotes#0;class#Theory#0" expanded="false" />
-            <element signature="method#generateScaleNotes#0;class#Theory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="84" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.7285714">
+        <state line="5" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Fretboard#0;class#Fretboard#0" expanded="false" />
             <element signature="method#paint#0;class#Fretboard#0" expanded="false" />
             <element signature="method#generateString#0;class#Fretboard#0" expanded="false" />
             <element signature="method#drawNote#0;class#Fretboard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.41576087">
+          <folding>
+            <element signature="method#getRoot#0;class#Theory#0" expanded="false" />
+            <element signature="method#setScale#0;class#Theory#0" expanded="false" />
+            <element signature="method#getScaleNotes#0;class#Theory#0" expanded="false" />
+            <element signature="method#generateScaleNotes#0;class#Theory#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -7,6 +7,7 @@ of the user interface. With that said, this class should only be interacted
 with set/get methods.
 
 */
+
 public class Theory {
 
     private int root;

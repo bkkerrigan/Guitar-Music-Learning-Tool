@@ -3,6 +3,7 @@ package com.moksa.musicapp;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class Fretboard extends Canvas {
 
     int STRING_ONE = 7;

@@ -6,6 +6,7 @@ import java.awt.event.*;
 
 public class ScalePanel extends JPanel{
 
+
     Theory theory;
 
     int[] selectedScale;

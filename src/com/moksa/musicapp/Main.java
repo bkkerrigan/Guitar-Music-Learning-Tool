@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args){
 
+
         Theory theory = new Theory();
         MasterPanel masterPanel = new MasterPanel(theory);
 
