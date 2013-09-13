@@ -14,7 +14,7 @@
     <file path="/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365868386469" ignored="false" />
     <file path="/Scale.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365869009151" ignored="false" />
     <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365820637850" ignored="false" />
-    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104442380" ignored="false" />
+    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104463121" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819058115" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819597290" ignored="false" />
     <file path="/MasterPanel.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379103453800" ignored="false" />
@@ -469,7 +469,11 @@
       <created>1379104448969</created>
       <updated>1379104448969</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rebooted">
+      <created>1379104467762</created>
+      <updated>1379104467762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
