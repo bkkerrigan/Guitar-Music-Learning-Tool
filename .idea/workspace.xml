@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62bd22ba-d496-43d6-8660-8284fbfa136d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/KeyPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/MasterPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/ScalePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Theory.java" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\GUI.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\Scale.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\black.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\pics\black.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\pics\white.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\red.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\BKK\IdeaProjects\Guitar-Music-Learning-Tool\src\com\moksa\musicapp\white.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" afterPath="$PROJECT_DIR$/src/com/moksa/musicapp/Fretboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Music.iws" />
@@ -29,7 +14,7 @@
     <file path="/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365868386469" ignored="false" />
     <file path="/Scale.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365869009151" ignored="false" />
     <file path="/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365820637850" ignored="false" />
-    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104273326" ignored="false" />
+    <file path="/Dummy.txt" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379104362371" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/Fretboard.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819058115" ignored="false" />
     <file path="H:/Guitar-Music-Learning-Tool-master/src/com/moksa/musicapp/GUI.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1365819597290" ignored="false" />
     <file path="/MasterPanel.java" changelist="62bd22ba-d496-43d6-8660-8284fbfa136d" time="1379103453800" ignored="false" />
@@ -476,7 +461,11 @@
       <created>1365823764620</created>
       <updated>1365823764620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="After an extended period of time my programming capabilities and understanding have changed dramatically and so this project has gone under huge re-construction to reduce redundancy, sloppiness, and ignorant coding styles.">
+      <created>1379104375824</created>
+      <updated>1379104375824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
