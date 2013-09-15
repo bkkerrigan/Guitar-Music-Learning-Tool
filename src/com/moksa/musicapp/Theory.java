@@ -3,8 +3,9 @@ package com.moksa.musicapp;
 /*
 
 The theory class is where all the "math" goes down. It will know nothing
-of the user interface. With that said, this class should only be interacted
-with set/get methods.
+of the user interface.
+
+TODO: Make generateNotes() a non void method
 
 */
 
@@ -16,11 +17,16 @@ public class Theory {
 
     Theory() {
         root = 0;
-        int[] scale;
-        String[] scaleNotes;
     }
 
-    //Set/get root
+    /**
+     *  Takes a string value from the actionCommand of key button from
+     *  the KeyPanel class and converts it to its value on the note circle.
+     *
+     * @param selectedKey - String name of the note selected on the KeyPanel
+     *
+     */
+
     public void setRoot(String selectedKey) {
 
         switch(selectedKey){
@@ -63,25 +69,44 @@ public class Theory {
         }
     }
 
+    /**
+     * Returns the value of the root/key based on it's position in the note circle.
+     *
+     * @return the value of the root/key
+     */
+
     public int getRoot(){
         return root;
     }
 
-    //set mode
+    /**
+     * Takes a string value from the actionCommand of a button from the
+     * the ScalePanel class and changes the scale variable to an array
+     * version of the scale, obtained from the CONSTANTS class
+     *
+     * @param selectedScale - String name of the the selected scale
+     */
+
     public void setScale(String selectedScale) {
 
         switch(selectedScale){
 
             case "Major Scale":
-                scale = Constants.MAJOR_SCALE;
+                scale = CONSTANTS.MAJOR_SCALE;
                 break;
 
             case "Minor Scale":
-                scale = Constants.MINOR_SCALE;
+                scale = CONSTANTS.MINOR_SCALE;
                 break;
 
         }
     }
+
+    /**
+     * Gets the array of of scale notes that are in a string array.
+     *
+     * @return scaleNotes
+     */
 
     public String[] getScaleNotes(){
 
@@ -89,10 +114,20 @@ public class Theory {
 
     }
 
-    //Generate Scale Notes
+    /**
+     * Generates musical notes in a scale:
+     *
+     * Using the selected key/root as the starting position, this method
+     * uses a loop, with length of the selected scale as max iterations,
+     * and takes steps to the following note on the selected scales
+     * step method. The scale note is then assigned a value based on its
+     * position in the NoteCircle
+     *
+     * Whole steps and half steps for dummies:
+     * http://www.dummies.com/how-to/content/understanding-half-steps-and-whole-steps.html
+     */
     public void generateScaleNotes(){
 
-        //Declare variables for this method
         int position;
         int steps;
 
@@ -104,19 +139,25 @@ public class Theory {
 
             position = position + scale[steps];
 
+            /*
+            Because the note circle is an endless loop, the position of the generator
+            must be reset to a lower value if it steps outside the bounds of the
+            Note Circle array.
+             */
+
             if(position == 12){
-                position = 0;
+                position = 0; //A
             }
 
             if(position == 13){
-                position = 1;
+                position = 1; //A#
             }
 
             if(position == 14){
-                position = 2;
+                position = 2; //B
             }
 
-            scaleNotes[steps] = Constants.NOTE_CIRCLE[position];
+            scaleNotes[steps] = CONSTANTS.NOTE_CIRCLE[position];
         }
     }
 }

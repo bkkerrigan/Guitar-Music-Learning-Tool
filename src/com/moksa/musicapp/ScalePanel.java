@@ -1,15 +1,12 @@
 package com.moksa.musicapp;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class ScalePanel extends JPanel{
 
 
     Theory theory;
-
-    int[] selectedScale;
 
     private ButtonGroup bg;
     private JRadioButton majorScale;

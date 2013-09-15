@@ -1,10 +1,17 @@
 package com.moksa.musicapp;
 
-import javax.swing.*;
 import java.awt.*;
 
 
 public class Fretboard extends Canvas {
+
+
+    /**
+     *
+     * This is sloppy and you know it. Makes the line drawing a looped event
+     * and turn the string tunings to an array.
+     *
+     */
 
     int STRING_ONE = 7;
     int STRING_TWO = 3;
@@ -13,7 +20,6 @@ public class Fretboard extends Canvas {
     int STRING_FIVE = 0;
     int STRING_SIX = 7;
 
-    int w = getWidth();
     int h = getHeight();
     Theory theory;
 
@@ -58,9 +64,9 @@ public class Fretboard extends Canvas {
 
             for(String n : theory.getScaleNotes()){
 
-                if(n == Constants.NOTE_CIRCLE[position]){
+                if(n.equals(CONSTANTS.NOTE_CIRCLE[position])){
 
-                    drawNote(g, i*20, coordinates, true, Constants.NOTE_CIRCLE[position]);
+                    drawNote(g, i*20, coordinates, true, CONSTANTS.NOTE_CIRCLE[position]);
                 }
 
                 else{
@@ -90,7 +96,7 @@ public class Fretboard extends Canvas {
 
     private void drawNote(Graphics g, int x, int y, boolean isNote, String noteName){
 
-        if(isNote == true){
+        if(isNote){
             g.setColor(Color.black);
             g.fillOval(x, y, 13, 13);
 
@@ -98,7 +104,7 @@ public class Fretboard extends Canvas {
             g.drawString(noteName, x + 2, y + 11);
         }
 
-        if(isNote == false){
+        if(isNote){
             g.setColor(Color.black);
             g.drawOval(x, y, 9, 9);
         }
